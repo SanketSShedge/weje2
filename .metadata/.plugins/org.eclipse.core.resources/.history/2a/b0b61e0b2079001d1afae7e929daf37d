@@ -1,0 +1,17 @@
+package com.jspiders.hibernatestudent.dao;
+
+import java.util.List;
+
+import javax.persistence.Query;
+
+public class StudentRetreive {
+	query = "from studentjpqldto";
+	Query createQuery = manager.createQuery(query);
+	List accounts = createQuery.getResultList();
+	
+	for (int i = 0; i < accounts.size(); i++) {
+		System.out.println(accounts.get(i));	
+	}
+	
+	transaction.commit();
+}

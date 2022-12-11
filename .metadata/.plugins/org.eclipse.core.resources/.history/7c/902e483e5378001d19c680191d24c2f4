@@ -1,0 +1,182 @@
+
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class NetflixServlet
+ */
+@WebServlet("/NetflixServlet")
+public class NetflixServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public NetflixServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.setContentType("text/html");
+		PrintWriter  writer = response.getWriter();
+		writer.println(<!DOCTYPE html>
+		<html lang="en">
+		<head>
+		    <meta charset="UTF-8">
+		    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+		    <title>Document</title>
+		    <style>
+		        *{
+		            box-sizing: border-box;
+		        }
+		        #parent{
+		            width: 100%;
+		            height: 735px;
+		            background-image: url(./Image/1_5lyavS59mazOFnb55Z6znQ.png);
+		            background-repeat: no-repeat;
+		            background-size: cover;
+		            opacity: 0.9;
+		        }
+		        #child1{
+		            height: 80px;
+		            width: 100%;
+		            background: transparent;
+		            display: flex;
+		        }
+		        #logo{
+		            height: 80px;
+		            width: 300px;
+		            background-image: url(./Image/Logonetflix.png);
+		            background-repeat: no-repeat;
+		            background-size: cover;
+		            margin-left: 20px;
+		            margin-top: 10px;
+		        }
+		        #nav{
+		            height: 80px;
+		            width: 400px;
+		            margin-left: 750px;
+		            display: flex;
+		        }
+		        #nav1{
+		            display: flex;
+		            height: 50px;
+		            width: 100px;
+		            margin-top: 15px;
+		            margin-left: 50px;
+		            border: 1px solid;
+		            border-color: white;
+		        }
+		        #n1{
+		            margin-top: 15px;
+		        }
+		        #n2{
+		            height: 45px;
+		            color: white;
+		            background: transparent;
+		            border: none;
+		        }
+		        #but{
+		            height: 40px;
+		            width: 100px;
+		            margin-top: 20px;
+		            margin-left: 50px;
+		            border: none;
+		            background-color: red;
+		            color:white;
+		            border-radius: 5px;
+		        }
+		        #inp{
+		            height: 80px;
+		            width: 750px;
+		            margin-left: 380px;
+		            display: flex;
+		        }
+		        #child2{
+		            align-items: center;
+		            text-align: center;
+		            color: white;
+		            font-size:xx-large;
+		            margin-top: 150px;
+		            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		        }
+		        #child3{
+		            align-items: center;
+		            text-align: center;
+		            font-size: x-large;
+		            color: white;
+		            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+		        }
+		        #email{
+		            height: 80px;
+		            width: 500px;
+		            border: 1px solid;
+		            font-size: large;
+		            padding-left: 10px;
+		            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		        }
+		        #but1{
+		            height: 80px;
+		            width: 250px;
+		            border: 1px solid;
+		            font-size: larger;
+		            background-color: red;
+		            border-color: red;
+		            color: white;
+		            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		            border-radius: 5px;
+		        }
+		    </style>
+		</head>
+		<body>
+		    <div id="parent">
+		        <div id="child1">
+		            <div id="logo"></div>
+		            <div id="nav">
+		                <div id="nav1">
+		                    <div><i id="n1" class="fa fa-globe" aria-hidden="true"></i></div>
+		                    <select name="" id="n2">
+		                        <option value="English">English</option>
+		                        <option value="Hindi">Hindi</option>
+		                    </select>
+		                </div>
+		                <input id="but" type="button" value="Sign In">
+		            </div>
+		        </div>
+		        <div id="child2">
+		            <h1>Unlimited movies, <br> TV shows and more.</h1>
+		            <span>Watch anywhere. Cancel anytime.</span><br><br>
+		        </div>
+		        <div id="child3">
+		            <span>Ready to watch? Enter your Email to create or restart your membership.</span><br><br>
+		            <div id="inp">
+		                <div><input type="email" name="" id="email" placeholder="Email address"></div>
+		                <div><input id="but1" type="button" value="Get Started >"></div>
+		            </div>
+		        </div>
+		    </div>
+		</body>
+		</html>);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}

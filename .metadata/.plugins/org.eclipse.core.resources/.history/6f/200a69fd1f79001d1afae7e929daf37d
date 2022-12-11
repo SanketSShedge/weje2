@@ -1,0 +1,5 @@
+package com.jspiders.hibernatestudent.dao;
+
+public class StudentRetreive {
+
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="./student" method="get">
+	<label>Enter name:</label>
+	<input type="text" name="name">
+	<input type="Submit" value="Submit">
+	
+	<label>Enter email:</label>
+	<input type="email" name="email">
+	<input type="Submit" value="Submit">
+	
+	<label>Enter Id:</label>
+	<input type="number" name="number">
+	<input type="submit" value="Submit">
+</form>
+</body>
+</html>

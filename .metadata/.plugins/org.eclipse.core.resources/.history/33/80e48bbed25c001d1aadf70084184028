@@ -1,0 +1,7 @@
+package com.jspiders.practice.main;
+
+public class FileInfoDemo1 {
+	public static void main(String[] args) {
+		File file = new File("");
+	}
+}
