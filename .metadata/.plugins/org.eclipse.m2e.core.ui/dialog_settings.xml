@@ -33,6 +33,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.jspiders.springcorexml"/>
 			<item value="com.jspiders.hibernateprograms"/>
 			<item value="com.jspiders.manytomanyredundancy"/>
 			<item value="com.jspiders.hibernatemanytooneuni"/>
@@ -44,6 +45,7 @@
 			<item value="com.jspiders"/>
 		</list>
 		<list key="artifactId">
+			<item value="springcorexml"/>
 			<item value="hibernateprograms"/>
 			<item value="manytomanyredundancy"/>
 			<item value="hibernatemanytooneuni"/>
